@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="ProgressActivity">//parent="@style/Theme.AppCompat.Light.NoActionBar"
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+    
+    <style name="Anim_scale" parent="@android:style/Animation.Activity">
+            <!--<item name="android:activityOpenEnterAnimation">@anim/scale_out</item>//新的activity创建进入效果-->
+            <item name="android:activityOpenExitAnimation">@anim/scale_out</item>//activity还没有finish()下退出效果
+            <!--<item name="android:activityCloseEnterAnimation">@anim/scale_out</item>//上一个activity返回进入效果-->
+            <item name="android:activityCloseExitAnimation">@anim/scale_out</item>//activity finish()之后退出效果...
+    </style>
+
+    <style name="dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/shape_progressdialog</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+</resources>

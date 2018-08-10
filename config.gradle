@@ -1,0 +1,24 @@
+ext {
+    //Android
+    androidBuildToolsVersion = "26.0.2"
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 25
+    androidVersionCode = 1
+    androidVersionName = "1.0"
+
+    //Libraries
+    butterKnifeVersion = '8.8.1'
+    butterKnifeCompilerVersion = '8.8.1'
+    fastJsonVersion = '1.2.44'
+    autoLayoutVersion = '1.4.5'
+    utilcodeVersion = '1.15.1'
+
+    dependencies = [
+            butterKnife : "com.jakewharton:butterknife:${butterKnifeVersion}",//控件注解库
+            butterKnifeCompiler : "com.jakewharton:butterknife-compiler:${butterKnifeCompilerVersion}",
+            fastJson : "com.alibaba:fastjson:${fastJsonVersion}",//json解析库
+            autoLayout : "com.zhy:autolayout:${autoLayoutVersion}",//万能布局适配库
+            utilcode : "com.blankj:utilcode:${utilcodeVersion}"//快速开发工具库
+    ]
+}
